@@ -3,4 +3,8 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
+<<<<<<< HEAD
 add_executable(leetcode main.cpp 167TowSumII.h 653TwoSumIV.h 170TwoSumIII.h 11ContainerWithMostWater.h 42TrappingRainWater.h)
+=======
+add_executable(leetcode main.cpp 167TowSumII.h 653TwoSumIV.h 170TwoSumIII.h 11ContainerWithMostWater.h 739DailyTemperatures.h 621TaskScheduler.h 617MergeTwoBinaryTrees.h)
+>>>>>>> origin/master
