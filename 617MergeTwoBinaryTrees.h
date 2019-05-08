@@ -4,13 +4,7 @@
 
 #ifndef LEETCODE_617MERGETWOBINARYTREES_H
 #define LEETCODE_617MERGETWOBINARYTREES_H
-#include <iostream>
- struct TreeNode {
-         int val;
-         TreeNode *left;
-         TreeNode *right;
-         TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-     };
+#include "Common.h"
 class Solution {
 public:
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {

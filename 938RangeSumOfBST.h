@@ -6,16 +6,7 @@
 #define LEETCODE_938RANGESUMOFBST_H
 #include <iostream>
 
-struct TreeNode {
-         int val;
-         TreeNode *left;
-         TreeNode *right;
-         TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-     };
-#include <stack>
-#include <vector>
-#include <set>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     int rangeSumBST(TreeNode* root, int L, int R) {

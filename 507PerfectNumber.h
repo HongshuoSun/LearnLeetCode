@@ -4,9 +4,7 @@
 
 #ifndef LEETCODE_507PERFECTNUMBER_H
 #define LEETCODE_507PERFECTNUMBER_H
-#include <set>
-#include <cmath>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     bool checkPerfectNumber(int num) {

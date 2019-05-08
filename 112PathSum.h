@@ -4,14 +4,7 @@
 
 #ifndef LEETCODE_112PATHSUM_H
 #define LEETCODE_112PATHSUM_H
-#include <iostream>
- struct TreeNode {
-      int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-  };
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int sum) {

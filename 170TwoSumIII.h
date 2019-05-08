@@ -4,13 +4,7 @@
 
 #ifndef LEETCODE_170TWOSUMIII_H
 #define LEETCODE_170TWOSUMIII_H
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <stack>
-#include <set>
-#include <list>
-using namespace std;
+#include "Common.h"
 class TwoSum {
 
 public:

@@ -5,17 +5,7 @@
 #ifndef LEETCODE_173BINARYSEARCHTREEITERATOR_H
 #define LEETCODE_173BINARYSEARCHTREEITERATOR_H
 
-#include <iostream>
-
- struct TreeNode {
-         int val;
-         TreeNode *left;
-         TreeNode *right;
-         TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-    };
-#include <set>
-#include <stack>
-using namespace std;
+#include "Common.h"
 class BSTIterator {
 private:
     set<TreeNode*> visited;

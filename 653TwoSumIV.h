@@ -5,21 +5,7 @@
 #ifndef LEETCODE_653TWOSUMIV_H
 #define LEETCODE_653TWOSUMIV_H
 
-#include <iostream>
- struct TreeNode {
-         int val;
-         TreeNode *left;
-         TreeNode *right;
-         TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-     };
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <stack>
-#include <set>
-#include <list>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     bool findTarget(TreeNode* root, int k) {

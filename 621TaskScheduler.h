@@ -4,12 +4,7 @@
 
 #ifndef LEETCODE_621TASKSCHEDULER_H
 #define LEETCODE_621TASKSCHEDULER_H
-#include <iostream>
-#include <vector>
-#include <set>
-#include <list>
-#include <algorithm>
-using namespace std;
+#include "Common.h"
 
 class Solution {
 public:

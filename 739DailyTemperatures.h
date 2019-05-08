@@ -4,12 +4,7 @@
 
 #ifndef LEETCODE_739DAILYTEMPERATURES_H
 #define LEETCODE_739DAILYTEMPERATURES_H
-#include <iostream>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-// use next min temperature array
+#include "Common.h"
 class Solution1 {
 public:
     vector<int> dailyTemperatures(vector<int>& T) {

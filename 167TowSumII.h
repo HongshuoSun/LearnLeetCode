@@ -4,11 +4,7 @@
 
 #ifndef LEETCODE_167TOWSUMII_H
 #define LEETCODE_167TOWSUMII_H
-#pragma once
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {

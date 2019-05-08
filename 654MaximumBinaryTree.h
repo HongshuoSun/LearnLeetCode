@@ -4,18 +4,7 @@
 
 #ifndef LEETCODE_654MAXIMUMBINARYTREE_H
 #define LEETCODE_654MAXIMUMBINARYTREE_H
-#include <iostream>
-#include <vector>
-#include <stack>
-using namespace std;
-
-  struct TreeNode {
-      int val;
-      TreeNode *left;
-     TreeNode *right;
-      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-  };
-
+#include "Common.h"
 class Solution {
 public:
     TreeNode* constructMaximumBinaryTree(vector<int>& nums) {

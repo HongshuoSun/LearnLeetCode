@@ -4,10 +4,7 @@
 
 #ifndef LEETCODE_42TRAPPINGRAINWATER_H
 #define LEETCODE_42TRAPPINGRAINWATER_H
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     int trap(vector<int>& height) {

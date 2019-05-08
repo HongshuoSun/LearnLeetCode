@@ -4,16 +4,7 @@
 
 #ifndef LEETCODE_94BINARYTREEINORDERTRAVERSAL_H
 #define LEETCODE_94BINARYTREEINORDERTRAVERSAL_H
-#include <vector>
-#include <stack>
-#include <set>
-using namespace std;
-  struct TreeNode {
-      int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-  };
+#include "Common.h"
 
 class Solution {
 public:

@@ -4,11 +4,7 @@
 
 #ifndef LEETCODE_666PATHSUMIV_H
 #define LEETCODE_666PATHSUMIV_H
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     int pathSum(vector<int>& nums) {

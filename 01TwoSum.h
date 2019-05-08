@@ -1,8 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {

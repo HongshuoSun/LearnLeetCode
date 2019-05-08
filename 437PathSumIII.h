@@ -5,17 +5,7 @@
 #ifndef LEETCODE_437PATHSUMIII_H
 #define LEETCODE_437PATHSUMIII_H
 
-#include <iostream>
-  struct TreeNode {
-      int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-  };
-
-
-
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     int pathSum(TreeNode* root, int sum) {

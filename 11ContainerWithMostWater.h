@@ -4,9 +4,7 @@
 
 #ifndef LEETCODE_11CONTAINERWITHMOSTWATER_H
 #define LEETCODE_11CONTAINERWITHMOSTWATER_H
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "Common.h"
 class Solution {
 public:
     int maxArea(vector<int>& height) {
