@@ -21,8 +21,8 @@ public:
         int val = *(pE-1);
         auto vIndexInInorder = find(iB,iE,val);
         TreeNode* node = new TreeNode(val);
-        node->left = genSubTree(pB,pB+(vIndexInInorder-iB)+1,iB,vIndexInInorder);
-        node->right = genSubTree(pB+(vIndexInInorder-iB)+1,pE-1,vIndexInInorder+1,iE);
+        node->left = genSubTree(pB,pB+(vIndexInInorder-iB),iB,vIndexInInorder);
+        node->right = genSubTree(pB+(vIndexInInorder-iB),pE-1,vIndexInInorder+1,iE);
         return node;
     }
 };
