@@ -15,6 +15,7 @@
 #include <algorithm>
 #include <deque>
 #include <unordered_set>
+#include <sstream>
 using namespace std;
 struct TreeNode {
     int val;
@@ -44,4 +45,46 @@ public:
         next = _next;
     }
 };
+
+TreeNode* GetTree(const std::string& str)
+{
+    stringstream ss(str);
+    string current;
+    int index = 0;
+    char buff[64];
+    queue<TreeNode *> before;
+    TreeNode *root = NULL;
+    int count = 0;
+    while (ss >> current) {
+        TreeNode *parent = NULL;
+        if (!before.empty()) {
+            parent = before.front();
+        }
+
+        TreeNode *node = NULL;
+        if (current == "N") {
+            node = NULL;
+        } else {
+            int currentVal = 0;
+            sscanf(current.c_str(), "%d", &currentVal);
+            node = new TreeNode(currentVal);
+            before.push(node);
+        }
+        if (parent != NULL) {
+            if (count == 0) {
+                parent->left = node;
+                count++;
+            } else {
+                parent->right = node;
+                before.pop();
+                count = 0;
+            }
+
+        } else if (root == NULL) {
+            root = node;
+        }
+    }
+    ss.clear();
+    return root;
+}
 #endif //LEETCODE_COMMON_H
