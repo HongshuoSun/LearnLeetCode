@@ -9,13 +9,18 @@ class Solution {
 public:
     bool isOneBitCharacter(vector<int>& bits) {
         int length = bits.size();
-        if(length<=1){
-            return true;
+        int i = 0;
+        int currentIs0 = false;
+        while(i<length){
+            if(bits[i]==1){
+                i=i+2;
+                currentIs0 = false;
+            }else{
+                i = i+1;
+                currentIs0 = true;
+            }
         }
-        if(bits[length-1]!=0 || bits[length-2]==1){
-            return false;
-        }
-        return true;
+        return i == length && currentIs0;
     }
 };
 #endif //LEETCODE_717_H
