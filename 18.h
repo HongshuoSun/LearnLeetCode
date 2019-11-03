@@ -22,7 +22,7 @@ public:
                     int current = *i+*j+*k+*l;
                     if(current<target){
                         k++;
-                        while(k<l && *k == *(k-1)) k++; 
+                        while(k<l && *k == *(k-1)) k++;
                     }else if(current >target){
                         l--;
                         while(k<l && *l == *(l+1)) l--;
