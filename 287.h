@@ -8,17 +8,18 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int i=0,j=0;
-        int length =nums.size();
-        while(true){
-            i = nums[i];
-            i = nums[i];
-            j = nums[j];
-            if(i==j){
-                return j;
-            }
+        int slow = nums[0];
+        int fast = nums[0];
+        do{
+            fast = nums[nums[fast]];
+            slow = nums[slow];
+        }while(slow!=fast);
+        int begin = nums[0];
+        while(begin!=slow){
+            slow = nums[slow];
+            begin = nums[begin];
         }
-        return -1;
+        return begin;
     }
 };
 #endif //LEETCODE_287_H
