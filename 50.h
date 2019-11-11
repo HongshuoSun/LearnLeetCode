@@ -8,12 +8,21 @@
 class Solution {
 public:
     double myPow(double x, int n) {
-        if(n==0){
+        if(n==0|| x==0){
             return 1;
         }
-        bool minus = n<0?true:false;
-        double ans= x;
-
+        if(n<0) {
+            x = 1 / x;
+            n = -n;
+        }
+        double ans = 1;
+        for(int i=n;i>=0;i<<=1){
+            if(i&1){
+                ans = ans*x;
+            }
+            x*=x;
+        }
+        return ans;
     }
 };
 #endif //LEETCODE_50_H
