@@ -1,9 +1,8 @@
 #include <iostream>
-#include "332.h"
+#include "310.h"
 int main() {
-    // [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
-    vector<vector<string>> data = {{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
+    vector<vector<int>> data = {{0, 3}, {1, 3}, {2, 3}, {4, 3}, {5, 4}};
     Solution s;
-    s.findItinerary(data);
+    s.findMinHeightTrees(6,data);
     return 0;
 }
