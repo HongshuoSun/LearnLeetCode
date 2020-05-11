@@ -7,16 +7,16 @@
 #include "Common.h"
 class Solution {
 public:
-    double myPow(double x, int n) {
+    double myPow(double x, long n) {
         if(n==0|| x==0){
             return 1;
         }
         if(n<0) {
             x = 1 / x;
-            n = -n;
+            n = - (n);
         }
         double ans = 1;
-        for(int i=n;i>=0;i<<=1){
+        for(int i=n;i>0;i>>=1){
             if(i&1){
                 ans = ans*x;
             }

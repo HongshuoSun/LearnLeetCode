@@ -1,11 +1,9 @@
 #include <iostream>
-#include "63.h"
+#include "332.h"
 int main() {
+    // [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+    vector<vector<string>> data = {{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
     Solution s;
-    vector<vector<int>> i = {{0,0,0},{0,1,0},{0,0,0}};
-
-    s.uniquePathsWithObstacles(i);
-
-
+    s.findItinerary(data);
     return 0;
 }
