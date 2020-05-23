@@ -1,13 +1,13 @@
 #include <iostream>
-#include "1091.h"
+#include "130.h"
 int main() {
 
 
     int n = 3;
-    vector<vector<int>> data=
-    {{0,0,0},{1,1,0},{1,1,0}};
+    vector<vector<char>> data=
+            {{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
     Solution s;
-    s.shortestPathBinaryMatrix(data);
+    s.solve(data);
 
     return 0;
 }
