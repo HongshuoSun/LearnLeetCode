@@ -21,37 +21,45 @@ public:
         vector<double> ans(queries.size(),-1.0f);
         for(int i=0;i<queries.size();i++){
             visited.clear();
-            ans[i] = GetValues(queries[i][0],queries[i][1]);
+            double values=0;
+            if(GetValues(queries[i][0],queries[i][1],values))
+            {
+                ans[i] = values;
+            }else {
+                ans[i] = -1;
+            }
         }
         return ans;
     }
-    double GetValues(const string& a,const string& b){
+    bool GetValues(const string& a,const string& b,double& value){
         if(dp.count(a)<1 || dp.count(b)<1){
-            return -1.0;
+            return false;
         }
         if(a==b){
-            return 1.0f;
+            value = 1.0;
+            return true;
         }
         if(visited.count(a)>0) {
-            return -1.0;
+            return false;
         }
         visited.insert(a);
         if(dp[a].count(b)>0){
-            return dp[a][b];
+            value =  dp[a][b];
+            return true;
         }
 
         for(const auto& i:dp[a]){
-            if( visited.count(i.first)<1) {
-                auto ans = GetValues(i.first, b);
-                dp[a][b]=ans*i.second;
-                dp[b][a] = 1/dp[a][b];
-                if(ans>-0.001){
-                    return ans;
+            if( visited.count(i.first)<1 && i.second>=0) {
+                double subValue;
+                if(GetValues(i.first, b,subValue))
+                {
+                    value = dp[a][b]=dp[a][i.first]*subValue;
+                    dp[b][a]=1/dp[a][b];
+                    return true;
                 }
             }
         }
-        return -1.0f;
+        return false;
     }
-
 };
 #endif //LEETCODE_399_H
