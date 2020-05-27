@@ -57,7 +57,7 @@ private:
                 parentMap.insert(make_pair(a,a));
             }
         }
-        void Contains(const T&a){
+        bool Contains(const T&a){
             return parentMap.count(a)>0;
         }
         T Find(const T&a){

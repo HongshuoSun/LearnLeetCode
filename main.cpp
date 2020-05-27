@@ -1,14 +1,12 @@
 #include <iostream>
-#include "399.h"
+#include "305.h"
 int main() {
 
-
-    int n = 3;
-    vector<vector<string>> eq={{"a","b"},{"b","c"}};
-    vector<double> val={2.0,3.0};
-    vector<vector<string>> que = {{"a","c"},{"b","a"},{"a","e"},{"a","a"},{"x","x"}};
     Solution s;
-    s.calcEquation(eq,val,que);
+
+    vector<vector<int>> data =
+    {{0,1},{0,0}};
+    s.numIslands2(1,2,data);
 
     return 0;
 }
