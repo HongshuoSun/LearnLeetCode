@@ -1,12 +1,14 @@
 #include <iostream>
-#include "305.h"
+#include <stdlib.h>
+void Func1(){
+    std::cout<<__FUNCTION__ <<std::endl;
+}
+void Func2(){
+    std::cout<<__FUNCTION__ <<std::endl;
+}
 int main() {
-
-    Solution s;
-
-    vector<vector<int>> data =
-    {{0,1},{0,0}};
-    s.numIslands2(1,2,data);
-
+    atexit(Func1);
+    atexit(Func2);
+//    exit(0);
     return 0;
 }
