@@ -2,12 +2,34 @@
 <project version="4">
   <component name="PublishConfigData" persistUploadOnCheckin="false">
     <serverData>
-      <paths name="Home (39bdbff2-520f-43bc-9519-843e9f915736)">
+      <paths name="Remote Host (0239e1c3-664e-4eea-bd7d-09709beb86fc)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.QmWmnRxYIq" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/tmp.1aNC1NHXKV" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host (ae156540-66ca-4482-922d-21e7eb1211a0)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vm (d2666641-a15d-4c79-ae61-fe2dffd5a0ba)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.cW83GCSLlI" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
           </excludedPaths>
