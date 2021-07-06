@@ -15,7 +15,28 @@
           </excludedPaths>
         </serverdata>
       </paths>
+      <paths name="Remote Host (29a2d433-01d8-432d-be0e-d44162a92117)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Remote Host (ae156540-66ca-4482-922d-21e7eb1211a0)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="WSL (75ce2d59-a9a8-474c-a954-09d714fa500b)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vm (4bcf641f-f298-428a-94d3-d9b85d2ae2b3)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
