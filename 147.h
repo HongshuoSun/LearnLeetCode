@@ -17,7 +17,6 @@ public:
             preNode->next->next = cur;
         }
         return dummy->next;
-    }
-    
+    }   
 };
 #endif
