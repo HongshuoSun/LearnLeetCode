@@ -2,51 +2,21 @@
 <project version="4">
   <component name="PublishConfigData" persistUploadOnCheckin="false">
     <serverData>
-      <paths name="Remote Host (0239e1c3-664e-4eea-bd7d-09709beb86fc)">
+      <paths name="Remote Host (0c9bb27b-3c67-4fe8-9fea-5b8447944aee)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.1aNC1NHXKV" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/tmp.zmIqyGWYcE" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="Remote Host (29a2d433-01d8-432d-be0e-d44162a92117)">
+      <paths name="vm (de87586f-e5c6-456f-8db1-1d0fb2c24b8b)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Remote Host (ae156540-66ca-4482-922d-21e7eb1211a0)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="WSL (75ce2d59-a9a8-474c-a954-09d714fa500b)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="vm (4bcf641f-f298-428a-94d3-d9b85d2ae2b3)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="vm (d2666641-a15d-4c79-ae61-fe2dffd5a0ba)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/tmp.cW83GCSLlI" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/tmp.jaP3o0zF9s" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
